@@ -1,0 +1,63 @@
+<HTML>
+
+
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 (Macintosh; I; PPC) [Netscape]">
+   <TITLE>記憶力テスト</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#ffffff" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+
+<CENTER><SCRIPT LANGUAGE="JavaScript">
+
+          var start=new Date();
+
+          function time(){           
+
+              setTimeout("time()",1000);                       
+
+              var now=new Date();
+
+              var dt=parseInt((now.getTime()-start.getTime())/1000);
+
+              document.EnForm.sbox.value=dt%60;
+
+          }
+
+</SCRIPT>
+<FORM NAME="EnForm"><INPUT TYPE="text" NAME="sbox" SIZE=2><B><FONT SIZE=+1>秒経過</FONT></B></FORM></CENTER>
+
+<HR>
+<BR><SCRIPT>
+
+   time();
+
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+
+      function disp(){
+
+          document.write("<body bgcolor='#ffffff'>");
+
+          document.write("<center><h2>時間切れ！<p>ここからGoogle form に行く予定</h1></center>");
+　　　　　document.write("<center><h2>↓</h2></center>");
+
+          document.write("<h1><center><FORM ACTION=''><INPUT TYPE='submit' VALUE='卍'></FORM></center></h2>");
+
+       
+
+       }
+
+</SCRIPT>
+
+<CENTER></CENTER>
+
+<CENTER><SCRIPT>
+
+     setTimeout("disp()",15000);
+
+</SCRIPT>
+<!--<IMG SRC="../image/memory.gif">--> <h1>ここに問題の画像かプログラム</h1>  </CENTER>
+&nbsp;
+
+</BODY>
